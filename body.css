@@ -1,31 +1,32 @@
 body {
-    background-image: url(kazuend-2KXEb_8G5vo-unsplash.jpg);
+    background-image: url('kazuend-2KXEb_8G5vo-unsplash.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin: 0; 
+    padding: 0; 
 }
-
 .container {
     width: 800px;
-    margin:auto; 
+    margin: auto; 
     text-align: left;
-    font-size:30px;
+    font-size: 30px;
+    font-weight: 500;
+    height: 100vh;
+    display: flex; 
+    flex-direction: column; 
     justify-content: center; 
     align-items: center; 
-    height: 100vh; 
-    font-weight:500;
-}
-header {
-    
-    justify-content: center; 
-    align-items: center; 
-    margin-bottom: 20px; 
 }
 
+
+header {
+    margin-bottom: 20px;
+}
 .packages {
     list-style: none;
     padding: 0;
-    color: rgb(255, 255, 255);
+    color: #fff; 
 }
 
 .packages li {

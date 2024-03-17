@@ -1,62 +1,44 @@
 body {
-    background-image: url(michael-baccin-Cv5ooHwI2DQ-unsplash.jpg);
+    background-image: url('michael-baccin-Cv5ooHwI2DQ-unsplash.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.viewpage{
-    width:50%;
-    height:100vh;
-    margin:auto;
+.viewpage {
+    width: 50%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 .name {
     text-align: center;
-    margin:auto;
-    font-family: Lora;
-    font-weight: 600px;
+    font-family: 'Lora', serif; 
+    font-weight: 600; 
     margin-bottom: 10px;
     font-size: 60px;
 }
+
 .profession {
     text-align: center;
-    margin:auto;
-    font-family: Lora;
-    font-weight: 400px;
+    font-family: 'Lora', serif;
+    font-weight: 400; 
     margin-bottom: 120px;
     font-size: 25px;
 }
-.certificate{
+
+.certificate,
+.experiencehead,
+.education .study,
+.education .experience {
     text-align: center;
-    margin:auto;
-    font-family: Lora;
-    font-weight: 600px;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    margin: auto; 
     margin-bottom: 40px;
-    font-size: 50px;
-    
-}
-.education .study {
-    text-align: center;
-    margin:auto;
-    font-family: Lora;
-    font-weight: 600px;
-    margin-bottom: 40px;
-    font-size: 40px;
-    
-}
-.experiencehead {
-    text-align: center;
-    margin:auto;
-    font-family: Lora;
-    font-weight: 600px;
-    margin-bottom: 40px;
-    font-size: 50px;
-}
-.education .experience{
-    text-align: center;
-    margin:auto;
-    font-family: Lora;
-    font-weight: 600px;
-    margin-bottom: auto;
     font-size: 40px;
 }
