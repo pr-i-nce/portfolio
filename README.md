@@ -1,4 +1,4 @@
-# THE TRIBE PORTFOLIO
+# STEPHEN PRINCE PORTFOLIO
 *****
 ### Author : Stephen Prince March 16th 2024
 ****
@@ -7,6 +7,9 @@ This is me.I share about my skills, educational background, hobbies and my favou
 ******
 
 ## SCREENSHOTS
+![Screenshot 2024-03-17 at 17-32-29 My Portfolio](https://github.com/pr-i-nce/portfolio/assets/162322860/9f71a4a7-1124-42a4-8221-7fd2f5b3b31b)
+![Screenshot 2024-03-17 at 17-32-44 My skills](https://github.com/pr-i-nce/portfolio/assets/162322860/08c45804-f044-422d-8804-1062fd717740)
+![Screenshot 2024-03-17 at 17-32-58 Contact Me](https://github.com/pr-i-nce/portfolio/assets/162322860/acadc017-c12f-4f14-aa0a-34564161b24d)
 
 
 
@@ -35,7 +38,7 @@ This is me.I share about my skills, educational background, hobbies and my favou
 > Run using live server
 *****
 ## Live Link
-Or you can access the web application directly via this [https://wondrous-lebkuchen-e0d517.netlify.app/](https://wondrous-lebkuchen-e0d517.netlify.app/)
+Or you can access the web application directly via this [https://stephenprinceportfolio.netlify.app/]
 *****
 ## Dependencies
 - Google fonts
