@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    height: 100vh;
+    margin: 0; 
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #c1c1bc 46%, #ffaa00 100%);
+
+}
+
+.contact {
+    font-size: 24px; /
+    font-weight: bold; 
+    margin-bottom: 120px; 
+    color:antiquewhite;
+    background: background-color: #516894;
+    background-image: linear-gradient(90deg, #516894 0%, #0b0e35 100%);
+    ;
+}
+
+.contacts {
+    list-style: none; 
+    padding: 0; 
+    display: flex; 
+    background-color: #cdc1c1;
+    background-image: linear-gradient(180deg, #cdc1c1 0%, #9391de 50%, #1aeed6 100%);
+
+    width: 95vw;
+    
+}
+
+.contacts li {
+    margin-right: 250px; 
+    text-align: center; 
+    margin-left: 180px;
+    font-weight: 600;
+    
+}
+
+.email, .linkedin, .PhoneNo. {
+    font-weight: bold; 
+   
+}

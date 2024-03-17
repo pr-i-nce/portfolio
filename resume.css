@@ -1,0 +1,57 @@
+.viewpage{
+    background-color: #9dbffb;
+    background-image: linear-gradient(90deg, #9dbffb 0%, #152187 100%);
+    width:50%;
+    height:100vh;
+    margin:auto;
+}
+.name {
+    text-align: center;
+    margin:auto;
+    font-family: Lora;
+    font-weight: 600px;
+    margin-bottom: 10px;
+    font-size: 60px;
+}
+.profession {
+    text-align: center;
+    margin:auto;
+    font-family: Lora;
+    font-weight: 400px;
+    margin-bottom: 120px;
+    font-size: 25px;
+}
+.certificate{
+    text-align: center;
+    margin:auto;
+    font-family: Lora;
+    font-weight: 600px;
+    margin-bottom: 40px;
+    font-size: 50px;
+    
+}
+.education .study {
+    text-align: center;
+    margin:auto;
+    font-family: Lora;
+    font-weight: 600px;
+    margin-bottom: 40px;
+    font-size: 40px;
+    
+}
+.experiencehead {
+    text-align: center;
+    margin:auto;
+    font-family: Lora;
+    font-weight: 600px;
+    margin-bottom: 40px;
+    font-size: 50px;
+}
+.education .experience{
+    text-align: center;
+    margin:auto;
+    font-family: Lora;
+    font-weight: 600px;
+    margin-bottom: auto;
+    font-size: 40px;
+}
