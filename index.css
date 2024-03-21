@@ -1,4 +1,5 @@
-* {
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -27,7 +28,6 @@ section {
     padding: 100px;
 }
 
-
 header {
     position: absolute;
     top: 0;
@@ -38,6 +38,7 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+
 header .logo {
     color: #000000;
     font-size: 2em;
@@ -66,4 +67,32 @@ header .navbar li {
 
 header .navbar li a:hover {
     color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 20px;
+    }
+
+    header .logo {
+        font-size: 1.5em;
+    }
+
+    header .navbar li {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    header {
+        padding: 10px;
+    }
+    header .logo {
+        font-size: 1.2em;
+    }
+    header .navbar li {
+        margin-left: 10px;
+    }
 }

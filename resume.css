@@ -3,32 +3,36 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
 }
 
 .viewpage {
-    width: 50%;
+    width: 80%;
+    max-width: 800px; 
     height: 100vh;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px; 
 }
 
 .name {
     text-align: center;
-    font-family: 'Lora', serif; 
-    font-weight: 600; 
+    font-family: 'Lora', serif;
+    font-weight: 600;
     margin-bottom: 10px;
-    font-size: 60px;
+    font-size: 3rem; 
 }
 
 .profession {
     text-align: center;
     font-family: 'Lora', serif;
-    font-weight: 400; 
-    margin-bottom: 120px;
-    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    font-size: 1.5rem; 
 }
 
 .certificate,
@@ -38,7 +42,29 @@ body {
     text-align: center;
     font-family: 'Lora', serif;
     font-weight: 600;
-    margin: auto; 
-    margin-bottom: 40px;
-    font-size: 40px;
+    margin: auto;
+    margin-bottom: 20px; 
+    font-size: 2rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .viewpage {
+        width: 90%;
+    }
+
+    .name {
+        font-size: 2rem; 
+    }
+
+    .profession {
+        font-size: 1.2rem; 
+    }
+
+    .certificate,
+    .experiencehead,
+    .education .study,
+    .education .experience {
+        font-size: 1.5rem; 
+    }
 }
