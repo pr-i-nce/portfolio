@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
+.navbar {
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    align-items: center;
+    width: 300px; /* Adjust width to accommodate buttons and line */
+    background-color: black;
+    z-index: 100;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Navbar Menu */
+.navbar-menu {
+    display: flex;
+    justify-content: space-between; /* Spread the items */
+    align-items: center;
+    width: 100%; /* Full width to align items */
+    padding: 0 1px; /* Adds 1px padding to the left and right of the nav */
+    position: relative;
+}
+
+/* Line between buttons */
+.navbar-line {
+    width: 80px; 
+    height: 0.08px;
+    background-color: rgb(230, 223, 223);
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+    animation: glowing 2s infinite alternate;
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 5px rgba(231, 158, 0, 0.3);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
+}
+
+/* Link Styling */
+.navbar-link {
+    text-decoration: none;
+    font-size: 11px;
+    padding: 10px;
+    color: white;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    font-weight: 900;
+    margin: 0; /* Ensure no extra margins */
+}
+
+.navbar-link:first-child {
+    margin-left: 1px; /* 1px from left edge */
+}
+
+.navbar-link:last-child {
+    margin-right: 1px; /* 1px from right edge */
+}
+
+.navbar-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+}

@@ -1,0 +1,79 @@
+/* Reset margins and overflow */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: auto; /* Allow scrolling */
+}
+
+/* Home Page Styles */
+.homepage {
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #000; /* Dark background */
+  position: relative;
+}
+
+.hero {
+  position: relative;
+  z-index: 2; /* To ensure the content is above the star background */
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.letter {
+  display: inline-block;
+  opacity: 0;
+  animation: enterAndAlign 1s ease-in-out forwards, wave 2s ease-in-out infinite 5s;
+  font-size: 1.5rem; 
+  line-height: 1.5; 
+  margin: 0 0.2rem;
+}
+
+/* Animation for letters entering */
+@keyframes enterAndAlign {
+  0% {
+    opacity: 0;
+    transform: translate(0, 1);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(1);
+  }
+  50% {
+    transform: translateY(0.08rem);
+  }
+}
+
+
+
+
+
+@keyframes moveStar {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    transform: translateY(100vh) translateX(calc(100vw * (random() - 0.5))); /* Moves randomly */
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+}
