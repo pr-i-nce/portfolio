@@ -318,7 +318,7 @@
   }
 
   .hero-content {
-    margin-top: 70%;
+    margin-top: 80%;
   }
 
   .name-heading {
@@ -327,7 +327,7 @@
   }
 
   .title-heading {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     margin-top: 40px;
   }
 
@@ -336,7 +336,7 @@
   }
 
   .scroll-indicator {
-    bottom: 8%;
+    bottom: 10%;
     left: 1.5%;
   }
 
@@ -349,7 +349,7 @@
   }
 
   .right-side-animation {
-    width: 20%;
+    width: 30%;
     height: 100%;
   }
 
@@ -361,7 +361,7 @@
 
   .down-button {
     font-size: 1.2rem;
-    bottom: 8%;
+    bottom: 10%;
   }
 
   .logo {
