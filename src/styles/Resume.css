@@ -1,12 +1,12 @@
 /* Resume Container */
 .resume-container {
   font-family: 'Roboto', sans-serif;
-  color: #e0e0e0; /* Light grey color */
-  background-color: #121212; /* Dark background */
+  color: #e0e0e0; 
+  background-color: #121212; 
   padding: 20px;
-  max-width: 1200px; 
-  border: none; /* Remove border */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Darker shadow for better contrast */
+  max-width: 100%; 
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); 
 }
 
 /* Header */
@@ -17,12 +17,12 @@ header {
 
 header h1 {
   font-size: 2.5rem;
-  color: #ffffff; /* White color for better contrast */
+  color: #ffffff;
 }
 
 header h2 {
   font-size: 1.5rem;
-  color: #aaaaaa; /* Lighter grey for subtitle */
+  color: #aaaaaa; 
 }
 
 /* Main Content */
@@ -37,7 +37,7 @@ section h3 {
   font-size: 1.8rem;
   color: #e0e0e0;
   margin-bottom: 10px;
-  border-bottom: 2px solid #333333; /* Darker border to match the theme */
+  border-bottom: 2px solid #333333; 
   padding-bottom: 5px;
 }
 
@@ -76,16 +76,16 @@ section h3 {
 .icon-container svg {
   width: 28px;
   height: 28px;
-  color: #e0e0e0; /* Light grey color for icons */
+  color: #e0e0e0; 
 }
 
 /* Experience, Education, and Projects */
 section .experience-item, .education-item, .project-item {
   margin-bottom: 15px;
-  background-color: #1c1c1c; /* Slightly lighter background for cards */
+  background-color: #1c1c1c; 
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 section .project-item a {
