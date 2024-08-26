@@ -1,11 +1,10 @@
 import React from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 import '../styles/ResumeTransition.css';
 import { FaAngleDoubleLeft } from 'react-icons/fa';
 
 const ResumeTransition = () => {
   const navigate = useNavigate();
-  const location = useLocation();
 
 
   return (
