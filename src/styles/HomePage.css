@@ -322,7 +322,7 @@
   }
 
   .hero-content {
-    margin-top: 20%;
+    margin-top: 70%;
   }
 
   .name-heading {
@@ -340,8 +340,8 @@
   }
 
   .scroll-indicator {
-    bottom: 5px;
-    left: 50%;
+    bottom: 50px;
+    left: 10px;
     transform: translateX(-50%);
   }
 
@@ -351,10 +351,11 @@
 
   .scroll-text {
     font-size: 8px;
+
   }
 
   .right-side-animation {
-    width: 100%;
+    width: 20%;
     height: 100%;
   }
 
@@ -370,21 +371,21 @@
 
   .logo {
     left: 10px;
-    top: 10px; 
+    top: 60px; 
     transform: translateY(0); 
     padding: 10px;
   }
 
   .logo-symbol {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 
   .initials {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 
   .slogan {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 
   .horizontal-line {
