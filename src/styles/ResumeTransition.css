@@ -48,4 +48,18 @@
   .button:hover {
     background-color: #ddd;
   }
+  .back-button {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    font-size: 2rem;
+    color: #fff;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+  }
   
+  .back-button:hover {
+    color: #1a73e8; 
+  }

@@ -56,7 +56,6 @@
   z-index: 3;
 }
 
-
 .line {
   width: 3px;
   height: 50px;
@@ -153,6 +152,22 @@
     background-color: rgba(34, 88, 104, 0.2);
   }
 }
+.down-button {
+  position: absolute;
+  bottom: 10px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #fff; 
+  cursor: pointer;
+  z-index: 5; 
+}
+
+.down-button:hover {
+  color: #1a73e8; 
+}
 
 /* Logo Styles */
 .logo {
@@ -198,4 +213,186 @@
 .horizontal-line.indented {
   margin-left: 50px; 
   width: 40%; 
+}
+
+
+/* Adjustments for tablets and smaller screens */
+@media (max-width: 768px) {
+  .homepage {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .hero {
+    width: 100%;
+    padding-left: 20px;
+    bottom: 10%;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+    margin-top: 70%;
+  }
+
+  .name-heading {
+    font-size: 2rem;
+    margin-bottom: 10%;
+    left: 0;
+  }
+
+  .title-heading {
+    font-size: 1.5rem;
+    margin-top: 60px;
+  }
+
+  .letter {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .scroll-indicator {
+    bottom: 50px;
+    left: 10px;
+    transform: translateX(-50%);
+  }
+
+  .line {
+    height: 30px;
+  }
+
+  .scroll-text {
+    font-size: 10px;
+  }
+
+  .right-side-animation {
+    width: 30%;
+    height: 100%;
+  }
+
+  .hex {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+  }
+
+  .down-button {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 768px) {
+    .logo {
+      right: auto; 
+      left: 10px; 
+      top: 11%; 
+      transform: translateY(0); 
+      padding: 20px;
+      background-color: #000;
+    }
+  }
+
+  .logo-symbol {
+    font-size: 3rem;
+  }
+
+  .initials {
+    font-size: 1.8rem;
+  }
+
+  .slogan {
+    font-size: 1.8rem;
+  }
+
+  .horizontal-line {
+    width: 60%;
+  }
+
+  .horizontal-line.indented {
+    margin-left: 20px;
+    width: 60%;
+  }
+}
+
+/* Adjustments for very small screens (phones) */
+@media (max-width: 480px) {
+  .hero {
+    padding-left: 10px;
+    bottom: 5%;
+  }
+
+  .hero-content {
+    margin-top: 20%;
+  }
+
+  .name-heading {
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+  }
+
+  .title-heading {
+    font-size: 1.2rem;
+    margin-top: 40px;
+  }
+
+  .letter {
+    font-size: 1rem;
+  }
+
+  .scroll-indicator {
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .line {
+    height: 20px;
+  }
+
+  .scroll-text {
+    font-size: 8px;
+  }
+
+  .right-side-animation {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hex {
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+  }
+
+  .down-button {
+    font-size: 1.2rem;
+  }
+
+  .logo {
+    left: 10px;
+    top: 10px; 
+    transform: translateY(0); 
+    padding: 10px;
+  }
+
+  .logo-symbol {
+    font-size: 2.5rem;
+  }
+
+  .initials {
+    font-size: 1.5rem;
+  }
+
+  .slogan {
+    font-size: 1.5rem;
+  }
+
+  .horizontal-line {
+    width: 80%;
+  }
+
+  .horizontal-line.indented {
+    margin-left: 10px;
+    width: 80%;
+  }
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { FaAngleDoubleDown } from 'react-icons/fa';
 import '../styles/HomePage.css';
 
 const HomePage = () => {
@@ -9,6 +10,10 @@ const HomePage = () => {
     if (event.deltaY > 0) {
       navigate('/about', { state: { scroll: true } });
     }
+  };
+
+  const handleDownClick = () => {
+    navigate('/about');
   };
 
   return (
@@ -65,10 +70,14 @@ const HomePage = () => {
         </div>
       </div>
       <div className="scroll-indicator">
-          <div className="line"></div>
-          <div className="line"></div>
-          <div className="scroll-text">SCROLL DOWN</div>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="scroll-text">SCROLL DOWN</div>
       </div>
+      {/* Down Button */}
+      <button className="down-button" onClick={handleDownClick}>
+        <FaAngleDoubleDown />
+      </button>
     </div>
   );
 };
