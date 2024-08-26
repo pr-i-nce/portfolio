@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaJs, FaPython, FaDatabase, FaReact, FaHtml5, FaCss3, FaFlask, FaGithub, FaGitAlt } from 'react-icons/fa';
+import { FaJs, FaPython, FaDatabase, FaReact, FaHtml5, FaCss3, FaGithub, FaGitAlt } from 'react-icons/fa';
 import '../styles/Resume.css';
 import ResumeTransition from './ResumeTransition';
 
