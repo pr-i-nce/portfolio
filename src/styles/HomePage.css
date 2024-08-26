@@ -327,7 +327,7 @@
   }
 
   .title-heading {
-    font-size: 1.0rem;
+    font-size: 0.8rem;
     margin-top: 40px;
   }
 
@@ -336,7 +336,7 @@
   }
 
   .scroll-indicator {
-    bottom: 10%;
+    bottom: 12%;
     left: 1.5%;
   }
 
@@ -361,7 +361,7 @@
 
   .down-button {
     font-size: 1.2rem;
-    bottom: 10%;
+    bottom: 12%;
   }
 
   .logo {
