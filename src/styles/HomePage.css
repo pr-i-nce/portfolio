@@ -329,7 +329,7 @@
   .title-heading {
     font-size: 0.8rem;
     margin-top: 40px;
-    left: 0;
+    text-align: left;
   }
 
   .letter {
