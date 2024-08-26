@@ -1,10 +1,3 @@
-/* Reset margins and overflow */
-body, html {
-  margin: 0;
-  padding: 0;
-  overflow: auto; /* Allow scrolling */
-}
-
 /* Home Page Styles */
 .homepage {
   font-family: 'Orbitron', sans-serif;
@@ -13,30 +6,71 @@ body, html {
   padding: 0;
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  text-align: center;
-  background-color: #000; /* Dark background */
+  background-color: #000;
   position: relative;
 }
 
 .hero {
   position: relative;
-  z-index: 2; /* To ensure the content is above the star background */
+  z-index: 2;
+  width: 50%;
+  padding-left: 50px;
+  bottom: 20%;
 }
 
 .hero-content {
   max-width: 800px;
+  text-align: left;
+  margin-top: 50%;
+}
+
+.name-heading {
+  font-size: 2.5rem; 
+  margin-bottom: 20%;
+}
+
+.title-heading {
+  font-size: 1.8rem;
+  margin-top: 90px;
+  margin-left: 6%;
 }
 
 .letter {
   display: inline-block;
   opacity: 0;
-  animation: enterAndAlign 1s ease-in-out forwards, wave 2s ease-in-out infinite 5s;
-  font-size: 1.5rem; 
-  line-height: 1.5; 
+  animation: enterAndAlign 1s ease-in-out forwards, wave 8s ease-in-out infinite 1s;
+  line-height: 1.5;
   margin: 0 0.2rem;
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  position: absolute;
+  left: 10px; 
+  bottom: 20px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 3;
+}
+
+
+.line {
+  width: 3px;
+  height: 50px;
+  background-color: #fff;
+  margin: 10px 0;
+}
+
+.scroll-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 12px;
+  letter-spacing: 0.1rem;
+  color: #fff;
+  margin-top: 10px;
 }
 
 /* Animation for letters entering */
@@ -60,20 +94,108 @@ body, html {
   }
 }
 
+.right-side-animation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%; 
+  height: 100%;
+  background: #000;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 1; 
+}
 
+.hex-grid {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 1; 
+}
 
+.hex {
+  width: 50px; 
+  height: 50px;
+  background-color: rgba(92, 92, 92, 0.2);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  margin: 10px; 
+  position: relative;
+  animation: float 5s ease-in-out infinite, shadeMovement 15s linear infinite;
+}
 
-
-@keyframes moveStar {
+/* Keyframes for floating effect */
+@keyframes float {
   0% {
-    transform: translateY(0) translateX(0);
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
   }
   100% {
-    transform: translateY(100vh) translateX(calc(100vw * (random() - 0.5))); /* Moves randomly */
+    transform: translateY(0);
   }
 }
 
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth; /* Enables smooth scrolling */
+/* Keyframes for moving shades of black */
+@keyframes shadeMovement {
+  0% {
+    background-color: rgb(14, 39, 34);
+  }
+  50% {
+    background-color: rgba(20, 20, 20, 0.4);
+  }
+  100% {
+    background-color: rgba(34, 88, 104, 0.2);
+  }
+}
+
+/* Logo Styles */
+.logo {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%); 
+  padding: 30px;
+  background-color: #000;
+  box-shadow: 0 4px 8px rgba(211, 47, 47, 0.8); 
+  text-align: center;
+  z-index: 2; 
+}
+
+.logo-symbol {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 4rem;
+  color: #D32F2F; 
+  margin-top: 0;
+}
+
+.initials {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  color: #D32F2F;
+  font-weight: 600;
+}
+
+.slogan {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.2rem;
+  color: #D32F2F;
+  font-weight: 600;
+}
+/* Horizontal Lines */
+.horizontal-line {
+  width: 40%;
+  height: 2px;
+  background-color: #D32F2F; 
+  margin-top: 5%; 
+}
+
+.horizontal-line.indented {
+  margin-left: 50px; 
+  width: 40%; 
 }

@@ -1,0 +1,51 @@
+.about-me {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: rgb(17,8,28);
+    background: linear-gradient(90deg, rgba(17,8,28,1) 0%, rgba(25,25,64,1) 35%, rgba(16,25,78,1) 100%);
+    color: white;
+    padding-left: 50px;
+    position: relative;
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .about {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #ddd;
+  }
+  
+  .card.full-stack {
+    font-size: 2rem;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: #fff;
+  }
+  
+  
+  .button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #2a3d52;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #ddd;
+  }
+  

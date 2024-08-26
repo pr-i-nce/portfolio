@@ -1,105 +1,84 @@
-/* Style the About Page */
 .about-me {
     position: relative;
     padding: 50px;
     color: #fff;
-    background: #0a0a0a; /* Dark background to complement hex grid */
+    background: #020207; 
     min-height: 100vh;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     overflow: hidden;
 }
 
 .about-me h1 {
     font-size: 3rem;
-    margin-bottom: 20px;
+    margin: 0;
+    text-align: left;
+}
+
+.about {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: #ffffff;
+}
+
+.about-me .card.full-stack {
+    background: rgba(121, 87, 87, 0.2); 
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(170, 66, 66, 0.2);
+    width: 60%; 
     text-align: center;
-    margin-top: 150px;
+    font-size: 2.5rem; 
+    color: #fff;
+    align-self: flex-end;
 }
 
-.about-me p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-bottom: 40px;
+.button {
+    color: rgb(253, 253, 253);
+    background-color: rgb(28, 28, 28);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 3px 5px #fff;
 }
 
-.cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.card {
-    background: rgba(255, 255, 255, 0); /* Transparent card background */
-    padding: 15px;
-    border-radius: 0px;
-    margin: 1px;
-    width: 45%;
-    box-shadow: 0 4px 8px rgba(66, 90, 170, 0.2);
-    opacity: 0; /* Initially invisible */
-    transform: translateY(-50px); /* Start slightly above */
-    animation: dropIn 1s ease-out forwards;
-}
-
-/* Add a delay to each card for a staggered effect */
-.card:nth-child(1) {
-    animation-delay: 0.2s;
-}
-.card:nth-child(2) {
-    animation-delay: 0.4s;
-}
-
-/* Animation for the drop-in effect */
-@keyframes dropIn {
-    0% {
-        opacity: 0;
-        transform: translateY(-50px); /* Start slightly above */
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0); /* Settle into position */
-    }
-}
-
-/* Hex Grid Background Animation */
+/* Background Animation */
 .about-me::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 70%; 
     height: 100%;
-    background: repeating-linear-gradient(
-      60deg,
-      rgba(46, 113, 175, 0.05) 0,
-      rgba(255, 255, 255, 0.05) 2px,
-      transparent 2px,
-      transparent 50px
-    ),
-    repeating-linear-gradient(
-      120deg,
-      rgba(214, 0, 0.05) 0,
-      #1274a10d 2px,
-      transparent 2px,
-      transparent 50px
-    ),
-    repeating-linear-gradient(
-      180deg,
-      rgb(1, 25, 92) 10px,
-      rgb(0, 18, 100) 2px,
-      transparent 2px,
-      transparent 50px
-    );
+    background: radial-gradient(circle, transparent 100px, black 100px, black 120px, transparent 120px),
+                radial-gradient(circle, transparent 200px, rgb(176, 69, 69) 200px, black 220px, transparent 220px),
+                radial-gradient(circle, transparent 300px, rgb(253, 253, 253) 300px, black 320px, transparent 320px),
+                radial-gradient(circle, transparent 400px, rgb(49, 65, 72) 400px, black 420px, transparent 420px),
+                radial-gradient(circle, transparent 500px, rgb(122, 105, 105) 500px, black 520px, transparent 520px);
+    background-size: cover;
+    background-position: right center; 
     z-index: 0;
-    animation: hexMove 20s linear infinite;
-    opacity: 0.4;
+    opacity: 0.5;
+    animation: circleMove 20s linear infinite;
 }
 
-/* Keyframes for the hex grid movement */
-@keyframes hexMove {
+/* Keyframes for the uneven circle animation */
+@keyframes circleMove {
     0% {
-      transform: translate(-5px, -1px);
+      background-position: right center;
+    }
+    25% {
+      background-position: calc(100% - 30px) calc(50% + 30px);
+    }
+    50% {
+      background-position: right calc(50% - 30px);
+    }
+    75% {
+      background-position: calc(100% - 60px) calc(50% + 60px);
     }
     100% {
-      transform: translate(-100px, -100px);
+      background-position: right center;
     }
 }

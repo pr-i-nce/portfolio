@@ -1,0 +1,99 @@
+/* Resume Container */
+.resume-container {
+  font-family: 'Roboto', sans-serif;
+  color: #e0e0e0; /* Light grey color */
+  background-color: #121212; /* Dark background */
+  padding: 20px;
+  max-width: 1200px; 
+  border: none; /* Remove border */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Darker shadow for better contrast */
+}
+
+/* Header */
+header {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #ffffff; /* White color for better contrast */
+}
+
+header h2 {
+  font-size: 1.5rem;
+  color: #aaaaaa; /* Lighter grey for subtitle */
+}
+
+/* Main Content */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Section Titles */
+section h3 {
+  font-size: 1.8rem;
+  color: #e0e0e0;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #333333; /* Darker border to match the theme */
+  padding-bottom: 5px;
+}
+
+/* Skills Section */
+.skills-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.skills-section h4 {
+  font-size: 1.5rem;
+  color: #e0e0e0;
+  margin-bottom: 15px;
+}
+
+.skills-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-section li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+/* Icons Styling */
+.icon-container {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-container svg {
+  width: 28px;
+  height: 28px;
+  color: #e0e0e0; /* Light grey color for icons */
+}
+
+/* Experience, Education, and Projects */
+section .experience-item, .education-item, .project-item {
+  margin-bottom: 15px;
+  background-color: #1c1c1c; /* Slightly lighter background for cards */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for cards */
+}
+
+section .project-item a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+section .project-item a:hover {
+  text-decoration: underline;
+}

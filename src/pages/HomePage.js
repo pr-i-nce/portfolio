@@ -2,27 +2,11 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/HomePage.css';
 
-const getRandomDirection = () => {
-  const directions = [
-    { transform: 'translateX(-100vw)' },
-    { transform: 'translateX(100vw)' },
-    { transform: 'translateY(-100vh)' },
-    { transform: 'translateY(100vh)' },
-  ];
-  return directions[Math.floor(Math.random() * directions.length)];
-};
-
 const HomePage = () => {
   const navigate = useNavigate();
 
-  const headings = [
-    'Welcome to My Portfolio',
-    "I'm Stephen Prince Mumo",
-  ];
-
   const handleScroll = (event) => {
     if (event.deltaY > 0) {
-      // Smooth scrolling to About page
       navigate('/about', { state: { scroll: true } });
     }
   };
@@ -31,24 +15,60 @@ const HomePage = () => {
     <div className="homepage" onWheel={handleScroll}>
       <section className="hero">
         <div className="hero-content">
-          {headings.map((heading, headingIndex) => (
-            <div key={headingIndex} className="heading">
-              {heading.split('').map((letter, index) => (
-                <span
-                  key={index}
-                  className="letter"
-                  style={{
-                    animationDelay: `${index * 0.1}s`,
-                    ...getRandomDirection(),
-                  }}
-                >
-                  {letter}
-                </span>
-              ))}
-            </div>
-          ))}
+          <div className="heading name-heading">
+            {'Prince'.split('').map((letter, index) => (
+              <span
+                key={index}
+                className="letter"
+                style={{ animationDelay: `${index * 0.025}s` }}
+              >
+                {letter}
+              </span>
+            ))}
+            <br />
+            {'Mumo'.split('').map((letter, index) => (
+              <span
+                key={index + 6} 
+                className="letter"
+                style={{ animationDelay: `${(index + 6) * 0.025}s` }}
+              >
+                {letter}
+              </span>
+            ))}
+          </div>
+          <div className="horizontal-line"></div>
+          <div className="horizontal-line indented"></div>
+          <div className="heading title-heading">
+            {'Full Stack Developer'.split('').map((letter, index) => (
+              <span
+                key={index}
+                className="letter"
+                style={{ animationDelay: `${index * 0.025}s` }}
+              >
+                {letter}
+              </span>
+            ))}
+          </div>
         </div>
       </section>
+      <div className="right-side-animation">
+        <div className="hex-grid">
+          {Array(300).fill(0).map((_, i) => (
+            <div key={i} className="hex"></div>
+          ))}
+        </div>
+      </div>
+      <div className="logo">
+        <div className="logo-text">
+          <div className="initials">P.M</div>
+          <div className="slogan">CODE TO PERFECTION</div>
+        </div>
+      </div>
+      <div className="scroll-indicator">
+          <div className="line"></div>
+          <div className="line"></div>
+          <div className="scroll-text">SCROLL DOWN</div>
+      </div>
     </div>
   );
 };
