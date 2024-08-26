@@ -27,7 +27,7 @@
 }
 
 .name-heading {
-  font-size: 2.5rem; 
+  font-size: 2.5rem;
   margin-bottom: 20%;
 }
 
@@ -48,8 +48,8 @@
 /* Scroll Indicator */
 .scroll-indicator {
   position: absolute;
-  left: 10px; 
-  bottom: 20px; 
+  left: 10px;
+  bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,12 +97,12 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 50%; 
+  width: 50%;
   height: 100%;
   background: #000;
   overflow: hidden;
   box-sizing: border-box;
-  z-index: 1; 
+  z-index: 1;
 }
 
 .hex-grid {
@@ -114,15 +114,15 @@
   align-content: flex-start;
   padding: 0;
   box-sizing: border-box;
-  z-index: 1; 
+  z-index: 1;
 }
 
 .hex {
-  width: 50px; 
+  width: 50px;
   height: 50px;
   background-color: rgba(92, 92, 92, 0.2);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  margin: 10px; 
+  margin: 10px;
   position: relative;
   animation: float 5s ease-in-out infinite, shadeMovement 15s linear infinite;
 }
@@ -152,21 +152,22 @@
     background-color: rgba(34, 88, 104, 0.2);
   }
 }
+
 .down-button {
   position: absolute;
-  bottom: 10px; 
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   background: transparent;
   border: none;
   font-size: 2rem;
-  color: #fff; 
+  color: #fff;
   cursor: pointer;
-  z-index: 5; 
+  z-index: 5;
 }
 
 .down-button:hover {
-  color: #1a73e8; 
+  color: #1a73e8;
 }
 
 /* Logo Styles */
@@ -174,18 +175,18 @@
   position: absolute;
   top: 50%;
   right: 50px;
-  transform: translateY(-50%); 
+  transform: translateY(-50%);
   padding: 30px;
   background-color: #000;
-  box-shadow: 0 4px 8px rgba(211, 47, 47, 0.8); 
+  box-shadow: 0 4px 8px rgba(211, 47, 47, 0.8);
   text-align: center;
-  z-index: 2; 
+  z-index: 2;
 }
 
 .logo-symbol {
   font-family: 'Orbitron', sans-serif;
   font-size: 4rem;
-  color: #D32F2F; 
+  color: #D32F2F;
   margin-top: 0;
 }
 
@@ -202,19 +203,19 @@
   color: #D32F2F;
   font-weight: 600;
 }
+
 /* Horizontal Lines */
 .horizontal-line {
   width: 40%;
   height: 2px;
-  background-color: #D32F2F; 
-  margin-top: 5%; 
+  background-color: #D32F2F;
+  margin-top: 5%;
 }
 
 .horizontal-line.indented {
-  margin-left: 50px; 
-  width: 40%; 
+  margin-left: 50px;
+  width: 40%;
 }
-
 
 /* Adjustments for tablets and smaller screens */
 @media (max-width: 768px) {
@@ -238,7 +239,6 @@
   .name-heading {
     font-size: 2rem;
     margin-bottom: 10%;
-    left: 0;
   }
 
   .title-heading {
@@ -252,9 +252,8 @@
   }
 
   .scroll-indicator {
-    bottom: 50px;
-    left: 10px;
-    transform: translateX(-50%);
+    bottom: 8%;
+    left: 1.5%;
   }
 
   .line {
@@ -278,18 +277,15 @@
 
   .down-button {
     font-size: 1.5rem;
-    margin-bottom: 50px;
+    bottom: 8%;
   }
 
-  @media (max-width: 768px) {
-    .logo {
-      right: auto; 
-      left: 10px; 
-      top: 11%; 
-      transform: translateY(0); 
-      padding: 20px;
-      background-color: #000;
-    }
+  .logo {
+    right: auto;
+    left: 1.5%;
+    top: 11%;
+    transform: translateY(0);
+    padding: 3%;
   }
 
   .logo-symbol {
@@ -340,9 +336,8 @@
   }
 
   .scroll-indicator {
-    bottom: 50px;
-    left: 10px;
-    transform: translateX(-50%);
+    bottom: 8%;
+    left: 1.5%;
   }
 
   .line {
@@ -351,7 +346,6 @@
 
   .scroll-text {
     font-size: 8px;
-
   }
 
   .right-side-animation {
@@ -367,13 +361,15 @@
 
   .down-button {
     font-size: 1.2rem;
+    bottom: 8%;
   }
 
   .logo {
-    left: 10px;
-    top: 60px; 
-    transform: translateY(0); 
-    padding: 10px;
+    right: auto;
+    left: 1.5%;
+    top: 11%;
+    transform: translateY(0);
+    padding: 3%;
   }
 
   .logo-symbol {
