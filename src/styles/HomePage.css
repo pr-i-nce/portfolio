@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #000;
+  background-color: #080808;
   position: relative;
 }
 
@@ -99,7 +99,7 @@
   right: 0;
   width: 50%;
   height: 100%;
-  background: #000;
+  background-color: #080808;
   overflow: hidden;
   box-sizing: border-box;
   z-index: 1;
@@ -177,8 +177,8 @@
   right: 50px;
   transform: translateY(-50%);
   padding: 30px;
-  background-color: #000;
-  box-shadow: 0 4px 8px rgba(211, 47, 47, 0.8);
+  background-color: #141414;
+  box-shadow: 0 4px 8px rgba(138, 54, 54, 0.8);
   text-align: center;
   z-index: 2;
 }
@@ -186,21 +186,21 @@
 .logo-symbol {
   font-family: 'Orbitron', sans-serif;
   font-size: 4rem;
-  color: #D32F2F;
+  color: #c93232;
   margin-top: 0;
 }
 
 .initials {
   font-family: 'Orbitron', sans-serif;
   font-size: 2.5rem;
-  color: #D32F2F;
+  color: #b92727;
   font-weight: 600;
 }
 
 .slogan {
   font-family: 'Orbitron', sans-serif;
   font-size: 2.2rem;
-  color: #D32F2F;
+  color: #ad2222;
   font-weight: 600;
 }
 
