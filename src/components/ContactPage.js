@@ -26,7 +26,7 @@ const Contact = () => {
 
 const ContactSection = styled.section`
   padding: 80px 20px;
-  background: linear-gradient(135deg, #ff47b6 0%, #7873f5 100%);
+  background: linear-gradient(135deg, #141e30 0%, #243b55 100%);
   color: #fff;
   text-align: center;
 
