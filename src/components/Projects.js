@@ -1,68 +1,53 @@
-import React from 'react';
-import styled from 'styled-components';
+import React, { useEffect, useState } from 'react';
+import "../styles/projects.css";
 
 const Projects = () => {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    // Define your projects array here
+    const projectData = [
+      {
+        title: "Recipe App",
+        description: "A full-stack web application built with React and Flask. It allows users to browse, add, and manage recipes.",
+        link: "https://github.com/pr-i-nce/recipe-app",
+        type: "GitHub"
+      },
+      {
+        title: "MC Event Website",
+        description: "A website designed for an MC service with a modern layout and easy navigation, showcasing sound system and event services.",
+        link: "https://mccalebke.netlify.app",
+        type: "Website"
+      },
+      {
+        title: "MC Website",
+        description: "A website designed for an MC service with a modern layout and easy navigation, showcasing sound system and event services.",
+        link: "https://ckenya.netlify.app/",
+        type: "Website"
+      }
+    ];
+
+    setProjects(projectData);
+  }, []);
+
   return (
-    <ProjectsSection id="projects">
-      <div className="container">
-        <h2>My Projects</h2>
-        <div className="projects-grid">
-          <div className="project-card">
-            <h3>Recipe App</h3>
-            <p>A full-stack web application built with React and Flask.</p>
-            <a href="https://github.com/pr-i-nce/recipe-app" className="project-link">View on GitHub</a>
+    <div className="projects-container">
+      <h2>My Projects</h2>
+      <div className="projects-grid">
+        {projects.map((project, index) => (
+          <div className="project-card" key={index}>
+            <div className="card-content">
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <a href={project.link} className="project-link">
+                {project.type === "GitHub" ? "View on GitHub" : "Visit Website"}
+              </a>
+            </div>
           </div>
-          <div className="project-card">
-            <h3>Portfolio</h3>
-            <p>A sleek design portfolio showcasing creative designs and animations.</p>
-            <a href="https://princemumo.netlify.app" className="project-link">Visit Website</a>
-          </div>
-        </div>
+        ))}
       </div>
-    </ProjectsSection>
+    </div>
   );
 };
-
-const ProjectsSection = styled.section`
-  padding: 80px 20px;
-  background-color: #f5f5f5;
-  color: #333;
-
-  .container {
-    h2 {
-      margin-bottom: 40px;
-    }
-
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-
-      .project-card {
-        background: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease;
-
-        h3 {
-          margin-bottom: 10px;
-        }
-
-        .project-link {
-          color: #1a73e8;
-          text-decoration: none;
-          font-weight: bold;
-          margin-top: 10px;
-          display: inline-block;
-        }
-
-        &:hover {
-          transform: translateY(-10px);
-        }
-      }
-    }
-  }
-`;
 
 export default Projects;

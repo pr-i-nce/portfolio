@@ -68,7 +68,7 @@ const SQLiteIcon = ({ size }) => (
 
 const SkillsSection = styled.section`
   padding: 80px 20px;
-  background-color: #f7f7f7;
+  background: rgb(105, 112, 255);
   color: #333;
   text-align: center;
 
